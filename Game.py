@@ -501,7 +501,7 @@ class Game:
             self.enemy_rects.pop(enemy_in_fight)
 
             if enemy.type == 'Boss' or enemy.type == 'Boss 2':
-                if self.board.board_file == 'board.csv':
+                if self.board.board_file == 'boards/board.csv':
                     message = f"You killed the Boss!\nClick to play next board"
                     self.crashed = True
                     msgbox = messagebox.showinfo(message=message)
@@ -514,7 +514,7 @@ class Game:
                     self.crashed = True
                     msgbox = messagebox.showinfo(message=message)
                     if msgbox == 'ok':
-                        self.set_up_board_and_size("board.csv")
+                        self.set_up_board_and_size("boards/board.csv")
                         self.crashed = True
                         self.play_again()
 
