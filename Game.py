@@ -533,7 +533,7 @@ class Game:
                 self.crashed = True
                 msgbox = messagebox.showinfo(message=message)
                 if msgbox == 'ok':
-                    self.set_up_board_and_size("board.csv")
+                    self.set_up_board_and_size("boards/board.csv")
                     self.crashed = True
                     self.play_again()
 
